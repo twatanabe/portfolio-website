@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ImageUtils from 'utils/ImageUtils'
-import './Image.css'
+import 'styles/Image.css'
 
 const Image = ({ filename, className, containerStyle, imgStyle }) => {
   return (

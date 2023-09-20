@@ -5,7 +5,7 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   text-transform: uppercase;
   background: transparent;
-  color: white;
+  /* color: white; */
   border-radius: 3em;
   padding: 2em 2em;
   letter-spacing: 0.25em;

@@ -5,7 +5,7 @@ import TextInput from 'components/TextInput'
 import TextArea from 'components/TextArea'
 import Header from 'components/Header'
 import { addTargetRef } from 'utils/AutoScroll'
-import './ContactSection.css'
+import 'styles/ContactSection.css'
 
 const Address = (
   <div className='contact-section-stats-container-item'>

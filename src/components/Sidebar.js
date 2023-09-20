@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { onControlScroll, addControllerRef } from 'utils/AutoScroll'
 import eventController from 'utils/eventController'
-import './Sidebar.css'
+import 'styles/Sidebar.css'
 
 const SidebarItem = ({ label, activeSection, sectionName, onActiveSectionChange }) => {
   return (
@@ -27,7 +27,7 @@ const Sidebar = ({ sidebarLinks, activeSection, onActiveSectionChange }) => {
   }, [])
   return (
     <div ref={ref => addControllerRef({ ref, id: 'sidebar' })} className='sidebar-container'>
-      <div className='sidebar-container--content'>
+      <div className='sidebar-content'>
         {sidebarLinks.map((item, index) =>
           <SidebarItem
             onActiveSectionChange={(sectionName) => {

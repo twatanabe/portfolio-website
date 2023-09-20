@@ -1,4 +1,4 @@
-.what-we-do-container {
+.about-container {
   background-color: #b74e91;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   padding: 4em 4em 2em 4em;
 }
 
-.what-we-do-container p {
+.about-container p {
   margin: 0 0 2em 0;
   color: rgba(255, 255, 255, 0.55);
   line-height: 1.75;
@@ -27,7 +27,7 @@
     border-left: solid 1px rgba(255, 255, 255, 0.15);
   }
 
-  .what-we-do-content-container {
+  .about-content-container {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -55,7 +55,7 @@
     flex-direction: column;
   }
 
-  .what-we-do-content-container {
+  .about-content-container {
     border-radius: 0.25em;
     border-bottom: solid 1px rgba(255, 255, 255, 0.15);
     border-left: solid 1px rgba(255, 255, 255, 0.15);

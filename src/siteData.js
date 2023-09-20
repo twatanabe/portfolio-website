@@ -1,15 +1,13 @@
 // data structure used to provide static content to site
 const siteData = {
   headerLinks: [
-    { label: 'Home', path: '/' },
-    { label: 'Generic', path: '/generic' },
-    { label: 'Elements', path: '/elements' },
+    { label: 'Welcome', path: '/' }
   ],
   sidebarLinks: [
-    { label: 'Welcome', sectionName: 'welcomeSection' },
-    { label: 'Who We Are', sectionName: 'whoWeAreSection' },
-    { label: 'What We Do', sectionName: 'whatWeDoSection' },
-    { label: 'Get In Touch', sectionName: 'getInTouchSection' },
+    { label: 'Welcome', sectionName: 'welcome' },
+    { label: 'Experience', sectionName: 'experience' },
+    { label: 'About', sectionName: 'about' },
+    { label: 'Hire Me', sectionName: 'getInTouchSection' },
   ],
   orderedListData: [
     'Dolor pulvinar etiam.',
@@ -26,7 +24,26 @@ const siteData = {
   ],
   sections: [
     {
-      id: 'whatWeDo', data: [
+      id: 'experience', data: [
+        {
+          headerLabel: 'Sed ipsum dolor',
+          imageFile: 'hand_holding_phone',
+          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+        },
+        {
+          headerLabel: 'Feugiat consequat',
+          imageFile: 'street_view',
+          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+        },
+        {
+          headerLabel: 'Ultricies aliquam',
+          imageFile: 'guy_gazing',
+          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
+        },
+      ]
+    },
+    {
+      id: 'about', data: [
         {
           row: [
 
@@ -46,25 +63,6 @@ const siteData = {
             { icon: 'gem', headerLabel: 'Aliquam urna dapibus', bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.' },
           ]
         }
-      ]
-    },
-    {
-      id: 'whoWeAre', data: [
-        {
-          headerLabel: 'Sed ipsum dolor',
-          imageFile: 'hand_holding_phone',
-          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-        },
-        {
-          headerLabel: 'Feugiat consequat',
-          imageFile: 'street_view',
-          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-        },
-        {
-          headerLabel: 'Ultricies aliquam',
-          imageFile: 'guy_gazing',
-          bodyText: 'Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.'
-        },
       ]
     }
   ]

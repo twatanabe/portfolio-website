@@ -1,5 +1,5 @@
 @media (max-width: 869px) {
-  .home-page-container {
+  .home-page-outer-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -8,29 +8,32 @@
 }
 
 @media (min-width: 870px) {
-  .home-page-container {
+  .home-page-outer-container {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
+    background-color: var(--background);
+    overflow-y: scroll;
   }
 }
 
-.home-page-content-container {
+.home-page-container {
   flex: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #5e42a6;
-  background-image: url('./intro.svg');
+  /* background-color: #5e42a6; */
+  /* background-image: url('./intro.svg'); */
   background-size: 100% 100%;
   background-position: top right;
   background-repeat: no-repeat;
-  overflow-y: scroll;
+  padding-right: 200px;
+  /* overflow-y: scroll; */
 }
 
-.home-page-content-container-content {
+.home-page-content {
   display: flex;
   width: 100%;
   flex-direction: column;

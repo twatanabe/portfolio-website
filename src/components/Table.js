@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Table.css'
+import 'styles/Table.css'
 
 const TableHeadCell = ({ label }) => {
   return <th>{label}</th>

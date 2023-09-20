@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Header.css'
+import 'styles/Header.css'
 
 const Header = ({ children, priority = '1', ...props }) => {
   const HeaderElem = `h${priority}`
   if (children && children.length && typeof children !== 'string') {
     return (
       <HeaderElem>
+        {children}
         {children.map((child, index) => React.cloneElement(child, { key: `hc_${index}`, ...props }))}
       </HeaderElem>
     )

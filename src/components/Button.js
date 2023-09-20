@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Button.css'
+import 'styles/Button.css'
 
 const getClassName = (inverse = false, size = '', disabled = false) => {
   if (inverse) {

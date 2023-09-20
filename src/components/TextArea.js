@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './TextArea.css'
+import 'styles/TextArea.css'
 
 const TextArea = ({ label, placeholder }) => {
   return (

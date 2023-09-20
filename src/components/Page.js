@@ -1,11 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Page.css'
+import 'styles/Page.css'
 
-const Page = ({ children, pageContainerClassName = 'page-container', ...props }) => {
+const Page = ({ 
+  children, 
+  pageContainerClassName = 'page-container',
+  onScroll = () => { },
+  ...props
+ }) => {
   if (children.length) {
     return (
-      <div className={`${pageContainerClassName}`}>
+      <div onScroll={onScroll} className={`${pageContainerClassName}`}>
         {
           children.map((child, index) => React.cloneElement(child, { key: `pc_${index}`, ...props }))
         }

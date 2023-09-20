@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Header from 'components/Header'
-import './Section.css'
+import 'styles/Section.css'
 
 const Section = ({ header = '', children = '', ...props }) => {
   return (

@@ -6,7 +6,7 @@ h5,
 h6,
 b,
 strong {
-  color: white;
+  color: black;
 }
 
 @media (max-width: 420px) {

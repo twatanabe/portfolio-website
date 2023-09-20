@@ -22,11 +22,9 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons"
-import HomePage from "./HomePage/HomePage"
-import GenericPage from "./GenericPage/GenericPage"
-import ElementsPage from "./ElementsPage/ElementsPage"
+import HomePage from "./page/HomePage"
 import siteData from "siteData"
-import "./index.css"
+import "./styles/root.css"
 
 library.add(
   fab,
@@ -49,14 +47,6 @@ library.add(
 
 const router = createBrowserRouter(
   [
-    {
-      path: "/generic",
-      Component: (props) => <GenericPage {...siteData} {...props} />,
-    },
-    {
-      path: "/elements",
-      Component: (props) => <ElementsPage {...siteData} {...props} />,
-    },
     {
       path: "/",
       Component: (props) => <HomePage {...siteData} {...props} />,

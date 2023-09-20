@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './SiteHeader.css'
-
-const CompanyName = ({ history }) => <div onClick={() => history.push('/')} className='header-link-company-name'>hyperspace</div>
+import 'styles/SiteHeader.css'
 
 const HeaderLinkItem = (props) => {
   const { label, path, history } = props
@@ -24,10 +22,13 @@ const HeaderLinks = ({ headerLinks, history }) => {
 
 const SiteHeader = ({ history, headerLinks = [] }) => {
   return (
-    <div className='header-container'>
+    <div className='header-container center'>
       <div className='header-content'>
-        <CompanyName history={history} />
-        <HeaderLinks history={history} headerLinks={headerLinks} />
+
+        <div className="logo">
+          <a href="https://takumiwatanabe.me" className="link">TW.</a>
+        </div>
+        <button></button>
       </div>
     </div>
   )

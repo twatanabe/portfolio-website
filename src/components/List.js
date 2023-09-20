@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './List.css'
+import 'styles/List.css'
 
 const renderListItem = (item, index) => <li key={`li_c${index}`}>{item}</li>
 

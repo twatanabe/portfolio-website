@@ -1,0 +1,99 @@
+@media (max-width: 420px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #5e42a6; */
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1em;
+  }
+  .header-links-container {
+    display: flex;
+    flex-direction: row;
+    border-top: solid 1px rgba(255, 255, 255, 0.15);
+    padding-top: 2em;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+  }
+  .header-link-item-content {
+    display: flex;
+    color: rgba(255, 255, 255, 0.35);
+    padding-right: 2em;
+  }
+  .header-link-item-content--active {
+    display: flex;
+    color: white;
+    padding-right: 2em;
+    cursor: pointer;
+  }
+  .header-link-item-content:hover {
+    display: flex;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+@media (min-width: 421px) {
+  .logo {
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .logo a {
+    pointer-events: auto;
+  }
+  .header-container {
+    position: fixed;
+    justify-content: space-between;
+    color: white;
+    height: 20%;
+    width: 82%;
+    font-weight: bold;
+    font-size: 1.25em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2em;
+  }
+  .header-links-container {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+  }
+  .header-link-item-content {
+    display: flex;
+    color: rgba(255, 255, 255, 0.35);
+    padding-right: 2em;
+    cursor: pointer;
+  }
+  .header-link-item-content--active {
+    display: flex;
+    color: white;
+    padding-right: 2em;
+    cursor: pointer;
+  }
+  .header-link-item-content--active:hover {
+    display: flex;
+    color: white;
+    padding-right: 2em;
+    cursor: pointer;
+  }
+  .header-link-item-content:hover {
+    display: flex;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from 'components/Button'
 import Header from 'components/Header'
 import { addTargetRef } from 'utils/AutoScroll'
-import './WhatWeDoSection.css'
+import 'styles/About.css'
 
 const ListRow = ({ row = [] }) => {
   return (
@@ -50,14 +50,14 @@ const ListItem = ({ icon, headerLabel, bodyText }) => {
   )
 }
 
-const WhatWeDoSection = ({ onClick, section = [] }) => {
+const About = ({ onClick, section = [] }) => {
   return (
-    <div ref={(ref) => addTargetRef({ ref, id: 'whatWeDoSection' })} className='what-we-do-container'>
-      <Header priority='2'>What we do</Header>
+    <div ref={(ref) => addTargetRef({ ref, id: 'about' })} className='about-container'>
+      <Header priority='2'>About</Header>
       <p>
         Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
       </p>
-      <div className='what-we-do-content-container'>
+      <div className='about-content-container'>
         {section.data.map((rowItem, index) => {
           return (
             <ListRow key={`lr_${index}`} {...rowItem} />
@@ -69,9 +69,9 @@ const WhatWeDoSection = ({ onClick, section = [] }) => {
   )
 }
 
-WhatWeDoSection.propTypes = {
+About.propTypes = {
   onClick: PropTypes.func.isRequired,
   section: PropTypes.object.isRequired
 }
 
-export default WhatWeDoSection
+export default About

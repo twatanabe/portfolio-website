@@ -1,27 +1,22 @@
-
 @media (max-width: 869px) {
-  .who-we-are-section-container {
+  .experience-container {
     display: flex;
     flex-direction: column;
     flex: 1;
     color: white;
     background-color: #5052b5;
   }
-
   .sub-section-container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
   }
-
   .sub-section-container:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.05);
   }
-
   .sub-section-container:nth-child(3) {
     background-color: rgba(0, 0, 0, 0.1);
   }
-
   .sub-section-text-content {
     flex: 1;
     display: flex;
@@ -31,42 +26,55 @@
     text-align: left;
     flex-grow: 1;
   }
-
   .sub-section-text-content h2 {
     padding: 0;
   }
-
   .sub-section-text-content p {
     color: rgba(255, 255, 255, 0.55);
     font-size: 17px;
     padding-bottom: 2em;
   }
 }
-
 @media (min-width: 870px) {
-  .who-we-are-section-container {
+  .experience-container {
     display: flex;
     flex-direction: column;
     flex: 1;
-    color: white;
-    background-color: #5052b5;
   }
-
+  .sub-section-wrapper {
+    padding-bottom: 30px;
+  }
+  .sub-section-container:hover {
+    background-color: var(--primaryShadow);
+    border-radius: 20px;
+  }
   .sub-section-container {
     display: flex;
     flex: 1;
     flex-direction: row;
     flex-grow: 1;
+    padding: 20px;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    transition: background 0.5s ease;
   }
-
-  .sub-section-container:nth-child(2) {
-    background-color: rgba(0, 0, 0, 0.05);
+  .sub-section-container .item-1 {
+    width: 20%;
   }
-
-  .sub-section-container:nth-child(3) {
-    background-color: rgba(0, 0, 0, 0.1);
+  .sub-section-container .item-2 {
+    width: 80%;
   }
-
+  .sub-section-container header {
+    padding-top: 3px;
+  }
+  .sub-section-container p {
+    margin-top: 0.5rem;
+  }
+  .sub-section-container ul {
+    margin-top: 1rem;
+  }
   .sub-section-text-content {
     flex: 1;
     display: flex;
@@ -75,11 +83,9 @@
     padding: 4em 2em 2em 4em;
     text-align: left;
   }
-
   .sub-section-text-content h2 {
     padding: 0;
   }
-
   .sub-section-text-content p {
     color: rgba(255, 255, 255, 0.55);
     font-size: 17px;
