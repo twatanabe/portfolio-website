@@ -30,6 +30,9 @@ const onTargetScroll = e => {
       }
     })
   const [nearestTarget] = findNearestElement(targetCoordsArr, scrollTop)
+  // console.log(targetCoordsArr)
+  // console.log(nearestTarget)
+  // console.log(scrollTop)
   if (nearestTarget && nearestTarget.id) {
     eventController.dispatch('SCROLLED_TO_TARGET', { verbose: false, args: [{ passedToListener: true, targetId: nearestTarget.id }] })
   }

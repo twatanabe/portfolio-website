@@ -1,10 +1,9 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section from './Section'
 import Button from 'components/Button'
 
 const IconButton = ({ icon, label, ...rest }) =>
-  <Button label={<span><FontAwesomeIcon icon={icon} />&nbsp;&nbsp;{label}</span>} {...rest} />
+  <Button label={<span>&nbsp;&nbsp;{label}</span>} {...rest} />
 
 const ButtonsSection = () => {
   return (

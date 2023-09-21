@@ -12,22 +12,20 @@ const PageContent = ({
     return (
       <div className={`${pageContentContainerClassName}`}>
         <div className={`${pageContentClassName}`}>
-          {
-            children.map((child, index) => React.cloneElement(child, { key: `pc_${index}`, ...props }))
-          }
+          {children.map((child, index) =>
+            React.cloneElement(child, { key: `pc_${index}`, ...props })
+          )}
         </div>
       </div>
-    )
+    );
   }
   return (
     <div className={`${pageContentContainerClassName}`}>
       <div className={`${pageContentClassName}`}>
-        {
-          React.cloneElement(children, { ...props })
-        }
+        {React.cloneElement(children, { ...props })}
       </div>
     </div>
-  )
+  );
 }
 
 PageContent.propTypes = {

@@ -1,12 +1,11 @@
 @media (max-width: 420px) {
   .welcome-container {
-    /* color: white; */
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 3em 2em 1em 2em;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
   }
 
   .welcome-container h1 {
@@ -15,7 +14,6 @@
   }
 
   .welcome-container p {
-    /* color: rgba(255, 255, 255, 0.55); */
     font-size: 1.25em;
     line-height: 1.75;
     margin: 0 0 2em 0;
@@ -24,16 +22,15 @@
 
 @media (min-width: 421px) {
   .welcome-container {
-    /* color: white; */
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     min-height: 100%;
-    /* margin-left: 140px; */
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     position: relative;
-    margin-bottom: 28vh;
+    margin-top: -60px;
+    margin-bottom: 34vh;
   }
 
   .welcome-container h1 {
@@ -42,7 +39,6 @@
   }
 
   .welcome-container p {
-    /* color: rgba(255, 255, 255, 0.55); */
     font-size: 1.25em;
     line-height: 1.75;
     margin: 0 0 2em 0;
@@ -50,8 +46,8 @@
 
   .page-header__scroll {
       position: absolute;
-      bottom: 250px;
-      left: 300px;
+      bottom: 230px;
+      left: 200px;
       transform: translateX(-50%);
       font-size: 0.8rem;
       color: #919795;
@@ -64,7 +60,7 @@
       transform-origin: bottom center;
       position: absolute;
       width: 1px;
-      height: 40vh;
+      height: 43vh;
       left: 30px;
       top: calc(100% + 25px);
       background: var(--bodyText);

@@ -11,7 +11,7 @@
   body {
     /* background-color: #312450; */
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     height: 100vh;
     width: 100vw;
   }
@@ -22,9 +22,8 @@
 }
 @media screen and (max-width: 420px) {
   body {
-    /* background-color: #312450; */
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto);
     height: 100%;
     width: 100%;
   }

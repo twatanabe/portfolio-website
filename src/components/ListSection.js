@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Section from './Section'
 import List from 'components/List'
 import Header from 'components/Header'
@@ -20,7 +19,7 @@ const ListSection = ({ unOrderedListData, orderedListData }) => {
           <List isOrdered listData={orderedListData} />
           <Header priority='3'>Icons</Header>
           <p>
-            <span className='contact-section-icon-container'>
+            {/* <span className='contact-section-icon-container'>
               <FontAwesomeIcon icon={['fab', 'twitter']} />
             </span>
             <span className='contact-section-icon-container'>
@@ -31,7 +30,7 @@ const ListSection = ({ unOrderedListData, orderedListData }) => {
             </span>
             <span className='contact-section-icon-container'>
               <FontAwesomeIcon icon={['fab', 'github']} />
-            </span>
+            </span> */}
           </p>
         </div>
       </div>

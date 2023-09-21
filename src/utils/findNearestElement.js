@@ -1,7 +1,7 @@
 const findNearestElement = (elements, scrollTop) => {
   const { abs: mathAbs } = Math
   const nearest = elements.reduce((f, next) => {
-    const distance = mathAbs(next.offsetTop - scrollTop)
+    const distance = mathAbs(next.offsetTop - scrollTop - 200)
 
     if (!f) {
       return { element: next, distance }

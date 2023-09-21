@@ -6,7 +6,6 @@
     height: 100%;
   }
 }
-
 @media (min-width: 870px) {
   .home-page-outer-container {
     display: flex;
@@ -17,22 +16,19 @@
     overflow-y: scroll;
   }
 }
-
+section {
+  margin-bottom: 9rem;
+}
 .home-page-container {
   flex: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: #5e42a6; */
-  /* background-image: url('./intro.svg'); */
-  background-size: 100% 100%;
-  background-position: top right;
-  background-repeat: no-repeat;
-  padding-right: 200px;
+  padding-right: 350px;
+  height: 100%;
   /* overflow-y: scroll; */
 }
-
 .home-page-content {
   display: flex;
   width: 100%;

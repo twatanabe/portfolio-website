@@ -1,0 +1,83 @@
+@media (max-width: 869px) {}
+
+@media (min-width: 870px) {
+  .sub-qualification-container {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    column-gap: 1.5rem;
+    padding: 20px;
+  }
+
+  .sub-qualification-container:hover {
+    background-color: var(--primaryShadow);
+    border-radius: var(--radius);
+
+    h3 {
+      color: var(--accent)
+    }
+
+    .arrow {
+      padding-left: 8px;
+      padding-bottom: 3px;
+    }
+  }
+
+  // .qualification-graph {
+  //   margin-left: 50%;
+  // }
+
+  // .qualification-rounder {
+  //   display: inline-block;
+  //   width: 13px;
+  //   height: 13px;
+  //   background-color: var(--primary);
+  //   border-radius: 50%;
+  //   margin-top: 4px;
+  // }
+
+  // .qualification-line {
+  //   display: block;
+  //   width: 1px;
+  //   height: 100%;
+  //   background-color: var(--primary);
+  //   transform: translate(6px, -7px);
+  // }
+
+  .qualification-image {
+    height: 110px;
+    width: 110px;
+  }
+
+  .qualification-data {
+    place-self: center start;
+  }
+
+  .qualification-title {
+    font-size: var(--fz-md);
+    // font-weight: var(--font-medium);
+    padding-bottom: 5px;
+  }
+
+  .qualification-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+    padding-bottom: 15px;
+  }
+
+  .qualification-date {
+    display: block;
+    font-size: var(--fz-sm);
+    // color: var(--text-color-light);
+  }
+}
+
+.education-section {
+  padding-bottom: 60px;
+
+}
+
+h2 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
