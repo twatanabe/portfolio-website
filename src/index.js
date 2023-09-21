@@ -1,11 +1,11 @@
 import React from "react"
 import * as ReactDOM from "react-dom/client"
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createHashRouter, RouterProvider } from "react-router-dom"
 import HomePage from "./page/HomePage"
 import siteData from "siteData"
 import "./styles/root.css"
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   [
     {
       path: "/",
