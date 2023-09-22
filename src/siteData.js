@@ -35,7 +35,7 @@ const siteData = {
             "SQL",
             "Elasticsearch",
           ],
-          link: "https://www.blackberry.com/us/en/products/cylance-endpoint-security/cylance-is-blackberry-cybersecurity"
+          link: "https://www.blackberry.com/us/en/products/cylance-endpoint-security/cylance-is-blackberry-cybersecurity",
         },
         {
           title: "Software Engineer II",
@@ -55,7 +55,7 @@ const siteData = {
             ".Net Core",
             "Angular",
           ],
-          link: "https://www.microsoft.com/en-us/store/b/sale"
+          link: "https://www.microsoft.com/en-us/store/b/sale",
         },
         {
           title: "Principal Software Consultant",
@@ -69,7 +69,7 @@ const siteData = {
           ],
           date: "2017 — 2019",
           tools: ["AWS", "Azure", "C#", "Angular", "SQL"],
-          link: "https://www.bio-rad.com/"
+          link: "https://www.bio-rad.com/",
         },
         {
           title: "Kowa American Corporation",
@@ -82,7 +82,7 @@ const siteData = {
           ],
           date: "2013 — 2017",
           tools: ["C#", "SQL", "HL7", "DICOM"],
-          link: "https://www.kowa-usa.com/"
+          link: "https://www.kowa-usa.com/",
         },
       ],
     },
@@ -182,7 +182,16 @@ const siteData = {
           title: "Endpoint Detection and Response (EDR)",
           description:
             "Develop ETL system and microservice APIs for handling events detected in user devices. Service UI application to monitor threat events and trigger response actions to the user devices.",
-          tools: ["AWS", "Kubernetes", "Terraform", "Python", "Go", "React", "SQL", "Elasticsearch"],
+          tools: [
+            "AWS",
+            "Kubernetes",
+            "Terraform",
+            "Python",
+            "Go",
+            "React",
+            "SQL",
+            "Elasticsearch",
+          ],
           year: "2023",
           link: "https://www.blackberry.com/us/en/solutions/endpoint-security/endpoint-detection-and-response",
         },
@@ -198,7 +207,16 @@ const siteData = {
           title: "Memory Protection Event Bifurcation",
           description:
             "Design data bifurcation system and migrate legacy memory defense event pipeline. Leverage Elasticsearch to improve event aggregation features and overall costs.",
-          tools: ["AWS Kinesis", "AWS Lambda", "Kafka", "Databricks", "Terraform", ".Net Core", "CQRS", "Elasticsearch"],
+          tools: [
+            "AWS Kinesis",
+            "AWS Lambda",
+            "Kafka",
+            "Databricks",
+            "Terraform",
+            ".Net Core",
+            "CQRS",
+            "Elasticsearch",
+          ],
           year: "2021",
           link: "https://docs.blackberry.com/en/unified-endpoint-security/blackberry-ues/cylance-syslog-guide/CylancePROTECT_Event_Types/Memory_Protection",
         },
@@ -206,14 +224,23 @@ const siteData = {
           title: "Mobile Threat Detection (MTD)",
           description:
             "Lead team to expand desktop threat management product to mobile phone users. Design 6 microservices and ETL system. Service UI with data collection APIs.",
-          tools: ["AWS Kinesis", "AWS Lambda", "Kafka", "Terraform", ".Net Core", "React", "SQL", "Elasticsearch"],
+          tools: [
+            "AWS Kinesis",
+            "AWS Lambda",
+            "Kafka",
+            "Terraform",
+            ".Net Core",
+            "React",
+            "SQL",
+            "Elasticsearch",
+          ],
           year: "2020",
           link: "https://www.blackberry.com/us/en/solutions/endpoint-security/mobile-threat-defense",
         },
         {
           title: "Endpoint Protect Platform (EPP)",
           description:
-            "Enhance event insights for threat events and UI audit logs to protect user devices from attacks.",
+            "Enhance event insights upon threat discovery and provide clear audit logs users as a part of protecting user devices from attacks.",
           tools: ["AWS", "Terraform", ".Net Core", "ELK", "React", "SQL"],
           year: "2019",
           link: "https://www.blackberry.com/us/en/solutions/endpoint-security/endpoint-protection-platform",

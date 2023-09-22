@@ -14,7 +14,7 @@ const Footer = ({ style = {} }) => {
           Deployed with <a href="https://vercel.com/">Vercel</a>.
         </p>
         <p className="watermark">
-          © TAKUMI WATANABE <a href="takumiwatanabe.me">TAKUMIWATANABE.ME</a>
+          © TAKUMI WATANABE • <a href="takumiwatanabe.me">TAKUMIWATANABE.ME</a>
         </p>
       </div>
     </div>

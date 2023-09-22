@@ -13,7 +13,7 @@ const router = createHashRouter(
     },
   ],
   {
-    basename: process.env.PUBLIC_URL,
+    basename: "/",
   }
 )
 
