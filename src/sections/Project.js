@@ -28,7 +28,8 @@ const ProjectItem = ({ title, description, tools = [], year, link }) => {
 
 const Project = ({ section = [] }) => {
   return (
-    <section onScroll={onTargetScroll} ref={(ref) => addTargetRef({ ref, id: 'project' })} className='project-container'>
+    <section onScroll={onTargetScroll} ref={(ref) => addTargetRef({ ref, id: 'projects' })} className='project-container'>
+      <h2>Projects</h2>
       {section.data.map((sectionProp, index) => <ProjectItem key={`ssi_${index}`} {...sectionProp} />)}
     </section>
   )

@@ -1,86 +1,82 @@
-@media (max-width: 869px) {
-  .experience-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    color: white;
-    background-color: #5052b5;
+.sub-experience-container {
+  display: grid;
+  border-radius: var(--radius);
+
+  header {
+    padding-top: 3px;
   }
 
-  .sub-experience-container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  h3,
+  p,
+  ul {
+    margin-bottom: 1rem;
   }
 
-  .sub-experience-container:nth-child(2) {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
+  ul {
+    padding-left: 20px;
+    list-style: none;
+    position: relative;
 
-  .sub-experience-container:nth-child(3) {
-    background-color: rgba(0, 0, 0, 0.1);
+    li::before {
+      content: "▹";
+      position: absolute;
+      left: 0px;
+      color: var(--accent);
+    }
   }
 }
 
-@media (min-width: 870px) {
+.sub-experience-container:hover {
+  background-color: var(--primary-shadow);
+  border-radius: var(--radius);
+
+  h3 {
+    color: var(--accent)
+  }
+
+  .arrow {
+    padding-left: 8px;
+  }
+}
+
+.experience-used-item {
+  display: inline-block;
+  margin: 3px 15px 3px 0;
+  font-family: Inconsolata, monospace;
+  font-size: var(--fz-xxs);
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background: 0 0;
+}
+
+@media (min-width: 0px) {
   .sub-experience-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 4rem;
+  }
+
+  .experience-date {
+    padding-bottom: 10px;
+    font-size: var(--fz-sm)
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    display: none;
   }
 
   .sub-experience-container {
-    display: grid;
     grid-template-columns: 2fr 6fr;
     column-gap: 1.5rem;
     padding: 20px;
-    border-radius: var(--radius);
-
-    header {
-      padding-top: 3px;
-    }
-
-    h3,
-    p,
-    ul {
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      padding-left: 20px;
-      list-style: none;
-      position: relative;
-
-      li::before {
-        content: "▹";
-        position: absolute;
-        left: 0px;
-        color: var(--accent);
-      }
-    }
   }
+}
 
-  .sub-experience-container:hover {
-    background-color: var(--primaryShadow);
-    border-radius: var(--radius);
-
-    h3 {
-      color: var(--accent)
-    }
-
-    .arrow {
-      padding-left: 8px;
-    }
-  }
-
-  .experience-used-item {
-    display: inline-block;
-    margin: 3px 15px 3px 0;
-    font-family: Inconsolata,monospace;
-    font-size: .75rem;
-    font-weight: 700;
-    padding: 2px 7px;
-    border-radius: 3px;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    background: 0 0;
+@media (min-width: 1200px) {
+  .sub-experience-wrapper {
+    padding-bottom: 1.875rem;
   }
 }

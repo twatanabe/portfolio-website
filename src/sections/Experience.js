@@ -34,6 +34,7 @@ const ExperienceItem = ({title, company, industry, description, date, achievemen
 const Experience = ({ section = [] }) => {
   return (
     <section onScroll={onTargetScroll} ref={(ref) => addTargetRef({ ref, id: 'experience' })} className='experience-container'>
+      <h2>Experience</h2>
       {section.data.map((sectionProp, index) => <ExperienceItem key={`ssi_${index}`} {...sectionProp} />)}
     </section>
   )

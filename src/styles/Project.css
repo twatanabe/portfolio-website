@@ -1,35 +1,50 @@
-@media screen and (min-width: 421px) {
+.sub-project-wrapper {
+  padding-bottom: 4rem;
+}
+.sub-project-container {
+  border-radius: var(--radius);
+}
+.sub-project-container h3,
+.sub-project-container p {
+  margin-bottom: 1rem;
+}
+.sub-project-container:hover {
+  background-color: var(--primary-shadow);
+  border-radius: var(--radius);
+}
+.sub-project-container:hover h3 {
+  color: var(--accent);
+}
+.sub-project-container:hover .arrow {
+  padding-left: 8px;
+}
+.project-used-tool {
+  display: inline-block;
+  margin: 3px 15px 3px 0;
+  font-family: Inconsolata, monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  background: 0 0;
+}
+@media screen and (min-width: 0px) {
   .sub-project-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    display: none;
   }
   .sub-project-container {
     padding: 20px;
-    border-radius: var(--radius);
   }
-  .sub-project-container h3,
-  .sub-project-container p {
-    margin-bottom: 1rem;
-  }
-  .sub-project-container:hover {
-    background-color: var(--primaryShadow);
-    border-radius: var(--radius);
-  }
-  .sub-project-container:hover h3 {
-    color: var(--accent);
-  }
-  .sub-project-container:hover .arrow {
-    padding-left: 8px;
-  }
-  .project-used-tool {
-    display: inline-block;
-    margin: 3px 15px 3px 0;
-    font-family: Inconsolata, monospace;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 2px 7px;
-    border-radius: 3px;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-    background: 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .sub-project-wrapper {
+    padding-bottom: 1.875rem;
   }
 }

@@ -11,7 +11,7 @@ const QualificationItem = ({ imageName, category, title, subtitle, date, link })
       <a href={`${link}`}>
         <div className="sub-qualification-container bg-ease">
           <div className="qualification-image">
-            <Image filename={`${imageName}`} width="40" height="40" />
+            <Image filename={`${imageName}`} />
             {/* {category == "Education" && <SchoolOutlinedIcon />}
           {category == "Certification" && <WorkspacePremiumOutlinedIcon />} */}
           </div>

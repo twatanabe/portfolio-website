@@ -1,60 +1,37 @@
-// mobile
-@media only screen and (min-width: 0em) {
-  :root {
-    --background: #F4F9FC;
-    --primary: #aadcec;
-    --primaryShadow: rgba(170, 220, 236, 0.15);
-    --primaryShade: #ffd675;
-    --primaryDark: #805d0d;
-    --bodyText: #0f1b61;
-    --accent: #FF7B9C;
-    --accentShadow: rgba(255, 123, 156, 0.15);
+:root {
+  --background: #F4F9FC;
+  --primary: #aadcec;
+  --primary-shadow: rgba(170, 220, 236, 0.15);
+  --text: #0f1b61;
+  --accent: #FF7B9C;
+  // --accent-shadow: rgba(255, 123, 156, 0.15);
+  --gray-shade: #919795;
 
-    --radius: 20px;
-    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    --font-roboto: 'Roboto', sans-serif;
-    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  --radius: 20px;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --font-roboto: 'Roboto', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
-    --fz-xxs: 12px;
-    --fz-xs: 13px;
-    --fz-sm: 14px;
-    --fz-md: 16px;
-    --fz-lg: 18px;
-    --fz-xl: 20px;
-    --fz-xxl: 22px;
-  }
-
+  --fz-xxs: 0.75rem;
+  --fz-xs: 0.813rem;
+  --fz-sm: 0.875rem;
+  --fz-md: 1rem;
+  --fz-lg: 1.125rem;
+  --fz-xl: 1.25rem;
+  --fz-xxl: 1.375rem;
 }
 
-@media screen and (min-width: 421px) {
-  body {
-    /* background-color: #312450; */
-    margin: 0;
-    font-family: var(--font-roboto);
-    height: 100vh;
-    width: 100vw;
-  }
-
-  #root {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+body {
+  margin: 0;
+  font-family: var(--font-roboto);
+  height: 100vh;
+  width: 100vw;
 }
 
-@media screen and (max-width: 420px) {
-  body {
-    /* background-color: #312450; */
-    margin: 0;
-    font-family: var(--font-roboto);
-    height: 100%;
-    width: 100%;
-  }
-
-  #root {
-    width: 100%;
-    height: 100%;
-  }
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 blockquote,
@@ -74,10 +51,11 @@ a,
 ul,
 li {
   margin: 0;
-  color: var(--bodyText)
+  color: var(--text)
 }
 
-p, li {
+p,
+li {
   line-height: 1.75;
 }
 
@@ -90,78 +68,79 @@ a {
   align-items: center;
 }
 
-.inline-flex {
-  display: inline-flex;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-h2 {
-  font-size: var(--fz-xxl);
-}
-
-.wrap {
-  padding: 3rem;
-  width: 100%;
-  height: 100%;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none;
-  box-shadow: 0 0 0 1pt white;
-}
-
-.t-primary {
-  color: var(--bodyText)
-}
-
 .dot {
   color: var(--primary);
 }
-
 
 .link {
   color: var(--accent);
   padding: 0 0 0.4em 0;
   position: relative;
-}
 
-.link:hover {
-  color: var(--primary);
-}
+  &:hover {
+    color: var(--primary);
 
-.link::before {
-  content: '';
-  display: inline;
-  width: 0%;
-  height: 0.2em;
-  position: absolute;
-  bottom: 0;
-  background-color: var(--primary);
-  transition: width 0.2s ease-in;
-}
+    &:before {
+      width: 100%;
+    }
+  }
 
-.link:hover::before,
-.link:focus::before {
-  width: 100%;
+  &:before {
+    content: '';
+    display: inline;
+    width: 0%;
+    height: 0.2em;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primary);
+    transition: width 0.2s ease-in;
+  }
 }
 
 .color-ease {
   -webkit-transition: color .5s ease;
-  -moz-transition:    color .5s ease;
-  -ms-transition:     color .5s ease;
-  -o-transition:      color .5s ease;
-  transition:         color .5s ease;
+  -moz-transition: color .5s ease;
+  -ms-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
 }
 
 .bg-ease {
   -webkit-transition: background .5s ease;
-  -moz-transition:    background .5s ease;
-  -ms-transition:     background .5s ease;
-  -o-transition:      background .5s ease;
-  transition:         background .5s ease;
+  -moz-transition: background .5s ease;
+  -ms-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  transition: background .5s ease;
+}
+
+/* Mobile */
+@media only screen and (min-width: 0px) {
+  p, li {
+    font-weight: normal;
+    line-height: 3.2;
+    font-size: var(--fz-md)
+  }
+
+  h2 {
+    font-size: var(--fz-xl);
+  }
+
+  h3 {
+    font-size: var(--fz-lg);
+  }
+
+  p,
+  li {
+    line-height: 1.25;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: var(--fz-xxl);
+  }
 }

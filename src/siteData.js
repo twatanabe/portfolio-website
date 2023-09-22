@@ -5,7 +5,7 @@ const siteData = {
     { label: "Welcome", sectionName: "welcome" },
     { label: "Experience", sectionName: "experience" },
     { label: "Qualification", sectionName: "qualification" },
-    { label: "Project", sectionName: "project" },
+    { label: "Projects", sectionName: "projects" },
     // { label: "And More", sectionName: "about" },
     { label: "Get In Touch", sectionName: "contact" },
   ],

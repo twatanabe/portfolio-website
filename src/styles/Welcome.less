@@ -1,29 +1,85 @@
-@media (max-width: 420px) {
-  .welcome-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 3em 2em 1em 2em;
-    justify-content: center;
-    font-family: var(--font-roboto);
-  }
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+}
 
-  .welcome-container h1 {
-    font-size: 4.75em;
-    margin: 0 0 0.5em 0;
-  }
+.welcome-content {
+  position: relative;
+  min-height: auto;
+  margin-bottom: 0;
+  transform: none !important;
+  text-align: center;
+  padding: 10px 0 50px;
+}
 
-  .welcome-container p {
-    font-size: 1.25em;
-    line-height: 1.75;
-    margin: 0 0 2em 0;
+.page-header__scroll {
+  position: absolute;
+  bottom: 230px;
+  transform: translateX(-50%);
+  font-size: var(--fz-xs);
+  color: var(--gray-shade);
+  font-family: var(--font-roboto);
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+    transform-origin: bottom center;
+    position: absolute;
+    width: 1px;
+    height: 52vh;
+    left: 30px;
+    top: calc(100% + 25px);
+    background: var(--text);
+    opacity: .45;
+    animation: vLineIn 1s ease-in-out 1.5s backwards;
   }
 }
 
-@media (min-width: 421px) {
+@media (min-width: 0px) {
+
   .welcome-container {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    font-family: var(--font-roboto);
+    margin-bottom: 60vh;
+
+    .me {
+      // width: 18rem;
+      // height: 18rem;
+      margin: auto;
+      // padding-top: 8rem;
+      padding: 5rem 2.5rem 1rem 2.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+
+    p {
+      display: none;
+    }
+
+    .page-header__scroll {
+      bottom: 20px;
+    }
+
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: var(--fz-xxl);
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .welcome-container {
     flex-grow: 1;
     min-height: 100%;
     justify-content: center;
@@ -31,40 +87,19 @@
     position: relative;
     margin-top: -60px;
     margin-bottom: 34vh;
+
+    .me {
+      display: none;
+    }
+
+    h1 {
+      font-size: 4.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
   }
 
-  .welcome-container h1 {
-    font-size: 4.75em;
-    margin: 0 0 0.5em 0;
-  }
-
-  .welcome-container p {
-    font-size: 1.25em;
-    line-height: 1.75;
-    margin: 0 0 2em 0;
-  }
-
-  .page-header__scroll {
-      position: absolute;
-      bottom: 230px;
-      left: 200px;
-      transform: translateX(-50%);
-      font-size: 0.8rem;
-      color: #919795;
-      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-      text-transform: uppercase;
-  }
-
-  .page-header__scroll:after {
-      content: "";
-      transform-origin: bottom center;
-      position: absolute;
-      width: 1px;
-      height: 43vh;
-      left: 30px;
-      top: calc(100% + 25px);
-      background: var(--bodyText);
-      opacity: .45;
-      animation: vLineIn 1s ease-in-out 1.5s backwards;
-  }
 }

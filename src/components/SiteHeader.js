@@ -4,13 +4,13 @@ import 'styles/SiteHeader.css'
 
 const SiteHeader = () => {
   return (
-    <div className='header-container center'>
+    <div className='header-container'>
       <div className='header-content'>
 
         <div className="logo">
           <a href="https://takumiwatanabe.me" className="link">TW.</a>
         </div>
-        <button></button>
+        {/* <button></button> */}
       </div>
     </div>
   )
