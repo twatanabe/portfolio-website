@@ -1,13 +1,3 @@
-@media (min-width: 0px) {
-  .sub-qualification-container {
-    padding-bottom: 40px;
-  }
-}
-@media (min-width: 768px) {
-  .sub-qualification-container {
-    padding: 20px;
-  }
-}
 .education-section,
 .certification-section {
   padding-bottom: 60px;
@@ -21,16 +11,6 @@
   grid-template-columns: 2fr 6fr;
   column-gap: 1.5rem;
 }
-.sub-qualification-container:hover {
-  background-color: var(--primary-shadow);
-  border-radius: var(--radius);
-}
-.sub-qualification-container:hover h3 {
-  color: var(--accent);
-}
-.sub-qualification-container:hover .arrow {
-  padding-left: 8px;
-}
 .qualification-image {
   height: 110px;
   width: 110px;
@@ -40,15 +20,50 @@
 }
 .qualification-title {
   font-size: var(--fz-md);
-  padding-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 .qualification-subtitle {
   display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-  padding-bottom: 15px;
+  font-size: var(--fz-sm);
+  color: var(--gray-shade);
+  margin-bottom: 1rem;
 }
 .qualification-date {
   display: block;
   font-size: var(--fz-sm);
+}
+@media (min-width: 0px) {
+  .sub-qualification-container {
+    padding: 20px 0;
+  }
+  .qualification-wrapper-anchor {
+    pointer-events: none;
+  }
+  .qualification-title {
+    pointer-events: auto;
+  }
+  .qualification-title:hover a {
+    color: var(--accent);
+  }
+  .qualification-title:hover .arrow {
+    padding-left: 8px;
+  }
+}
+@media (min-width: 768px) {
+  .qualification-wrapper-anchor {
+    pointer-events: auto;
+  }
+  .sub-qualification-container {
+    padding: 20px;
+  }
+  .sub-qualification-container:hover {
+    background-color: var(--primary-shadow);
+    border-radius: var(--radius);
+  }
+  .sub-qualification-container:hover a {
+    color: var(--accent);
+  }
+  .sub-qualification-container:hover .arrow {
+    padding-left: 8px;
+  }
 }

@@ -8,16 +8,6 @@
 .sub-project-container p {
   margin-bottom: 1rem;
 }
-.sub-project-container:hover {
-  background-color: var(--primary-shadow);
-  border-radius: var(--radius);
-}
-.sub-project-container:hover h3 {
-  color: var(--accent);
-}
-.sub-project-container:hover .arrow {
-  padding-left: 8px;
-}
 .project-used-tool {
   display: inline-block;
   margin: 3px 15px 3px 0;
@@ -31,16 +21,38 @@
   background: 0 0;
 }
 @media screen and (min-width: 0px) {
-  .sub-project-wrapper {
-    padding-bottom: 4rem;
+  .project-wrapper-anchor {
+    pointer-events: none;
+  }
+  .project-name {
+    pointer-events: auto;
+  }
+  .project-name:hover a {
+    color: var(--accent);
+  }
+  .project-name:hover .arrow {
+    padding-left: 8px;
   }
 }
 @media screen and (min-width: 768px) {
   h2 {
     display: none;
   }
+  .project-wrapper-anchor {
+    pointer-events: auto;
+  }
   .sub-project-container {
     padding: 20px;
+  }
+  .sub-project-container:hover {
+    background-color: var(--primary-shadow);
+    border-radius: var(--radius);
+  }
+  .sub-project-container:hover a {
+    color: var(--accent);
+  }
+  .sub-project-container:hover .arrow {
+    padding-left: 8px;
   }
 }
 @media screen and (min-width: 1200px) {

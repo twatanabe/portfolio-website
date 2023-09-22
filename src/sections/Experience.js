@@ -7,13 +7,17 @@ import { addTargetRef, onTargetScroll } from "utils/AutoScroll";
 const ExperienceItem = ({title, company, industry, description, date, achievements, tools, link}) => {
   return (
     <div className="sub-experience-wrapper">
-      <a href={`${link}`}>
+      <a href={`${link}`} className="experience-wrapper-anchor">
         <div className="sub-experience-container bg-ease">
           <div className="experience-date">
             <header>{date}</header>
           </div>
           <div>
-            <h3 className="color-ease">{title} • {company} <Arrow /></h3>
+            <h3 className="experience-title color-ease">
+              <a href={`${link}`}>
+                {title} • {company} <Arrow />
+              </a>
+            </h3>
             {/* <p>{industry}</p> */}
             <p>{description}</p>
             <ul>

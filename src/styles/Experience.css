@@ -21,16 +21,6 @@
   left: 0px;
   color: var(--accent);
 }
-.sub-experience-container:hover {
-  background-color: var(--primary-shadow);
-  border-radius: var(--radius);
-}
-.sub-experience-container:hover h3 {
-  color: var(--accent);
-}
-.sub-experience-container:hover .arrow {
-  padding-left: 8px;
-}
 .experience-used-item {
   display: inline-block;
   margin: 3px 15px 3px 0;
@@ -44,25 +34,47 @@
   background: 0 0;
 }
 @media (min-width: 0px) {
-  .sub-experience-wrapper {
-    padding-bottom: 4rem;
+  .experience-wrapper-anchor {
+    pointer-events: none;
   }
   .experience-date {
     padding-bottom: 10px;
     font-size: var(--fz-sm);
   }
+  .experience-title {
+    pointer-events: auto;
+  }
+  .experience-title:hover a {
+    color: var(--accent);
+  }
+  .experience-title:hover .arrow {
+    padding-left: 8px;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 0px) and (min-width: 768px) {
   h2 {
     display: none;
+  }
+  .experience-wrapper-anchor {
+    pointer-events: auto;
   }
   .sub-experience-container {
     grid-template-columns: 2fr 6fr;
     column-gap: 1.5rem;
-    padding: 20px;
+    padding: 1.25rem;
+  }
+  .sub-experience-container:hover {
+    background-color: var(--primary-shadow);
+    border-radius: var(--radius);
+  }
+  .sub-experience-container:hover a {
+    color: var(--accent);
+  }
+  .sub-experience-container:hover .arrow {
+    padding-left: 8px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 0px) and (min-width: 1200px) {
   .sub-experience-wrapper {
     padding-bottom: 1.875rem;
   }

@@ -11,19 +11,6 @@
   }
 }
 
-.sub-project-container:hover {
-  background-color: var(--primary-shadow);
-  border-radius: var(--radius);
-
-  h3 {
-    color: var(--accent)
-  }
-
-  .arrow {
-    padding-left: 8px;
-  }
-}
-
 .project-used-tool {
   display: inline-block;
   margin: 3px 15px 3px 0;
@@ -38,9 +25,22 @@
 }
 
 @media screen and (min-width: 0px) {
+  .project-wrapper-anchor {
+    pointer-events: none;
+  }
 
-  .sub-project-wrapper {
-    padding-bottom: 4rem;
+  .project-name {
+    pointer-events: auto;
+
+    &:hover {
+      a {
+        color: var(--accent);
+      }
+
+      .arrow {
+        padding-left: 8px;
+      }
+    }
   }
 }
 
@@ -49,8 +49,25 @@
     display: none;
   }
 
+  .project-wrapper-anchor {
+    pointer-events: auto;
+  }
+
   .sub-project-container {
     padding: 20px;
+
+    &:hover {
+      background-color: var(--primary-shadow);
+      border-radius: var(--radius);
+
+      a {
+        color: var(--accent)
+      }
+
+      .arrow {
+        padding-left: 8px;
+      }
+    }
   }
 }
 

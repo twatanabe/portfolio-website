@@ -7,11 +7,13 @@ import 'styles/Project.css'
 const ProjectItem = ({ title, description, tools = [], year, link }) => {
   return (
     <div className="sub-project-wrapper">
-      <a href={`${link}`}>
+      <a className="project-wrapper-anchor" href={`${link}`}>
         <div className="sub-project-container bg-ease">
           <h3 className="project-name color-ease">
-            {title}
-            <Arrow />
+            <a href={`${link}`}>
+              {title}
+              <Arrow />
+            </a>
           </h3>
           <p>{description}</p>
           <div className="project-used">

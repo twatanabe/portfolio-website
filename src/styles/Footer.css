@@ -8,10 +8,10 @@
   height: 100%;
   width: 100%;
 }
-a {
+.footer-container-content a {
   font-weight: bold;
 }
-a:hover {
+.footer-container-content a:hover {
   color: var(--accent);
 }
 .watermark {

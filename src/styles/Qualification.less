@@ -1,18 +1,3 @@
-@media (min-width: 0px) {
-  .sub-qualification-container {
-    padding-bottom: 40px;
-  }
-}
-
-@media (min-width: 768px) {
-  .sub-qualification-container {
-    padding: 20px;
-  }
-}
-
-@media (min-width: 1200px) {}
-
-
 .education-section,
 .certification-section {
   padding-bottom: 60px;
@@ -26,19 +11,6 @@
   display: grid;
   grid-template-columns: 2fr 6fr;
   column-gap: 1.5rem;
-}
-
-.sub-qualification-container:hover {
-  background-color: var(--primary-shadow);
-  border-radius: var(--radius);
-
-  h3 {
-    color: var(--accent)
-  }
-
-  .arrow {
-    padding-left: 8px;
-  }
 }
 
 // .qualification-graph {
@@ -73,19 +45,66 @@
 
 .qualification-title {
   font-size: var(--fz-md);
-  // font-weight: var(--font-medium);
-  padding-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 
 .qualification-subtitle {
   display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-  padding-bottom: 15px;
+  font-size: var(--fz-sm);
+  color: var(--gray-shade);
+  margin-bottom: 1rem;
 }
 
 .qualification-date {
   display: block;
   font-size: var(--fz-sm);
-  // color: var(--text-color-light);
 }
+
+@media (min-width: 0px) {
+  .sub-qualification-container {
+    padding: 20px 0;
+  }
+
+  .qualification-wrapper-anchor {
+    pointer-events: none;
+  }
+
+  .qualification-title {
+    pointer-events: auto;
+
+    &:hover {
+      a {
+        color: var(--accent);
+      }
+
+      .arrow {
+        padding-left: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .qualification-wrapper-anchor {
+    pointer-events: auto;
+  }
+
+  .sub-qualification-container {
+    padding: 20px;
+
+    &:hover {
+      background-color: var(--primary-shadow);
+      border-radius: var(--radius);
+
+      a {
+        color: var(--accent)
+      }
+
+      .arrow {
+        padding-left: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {}

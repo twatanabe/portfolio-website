@@ -8,7 +8,7 @@ import 'styles/Qualification.css'
 const QualificationItem = ({ imageName, category, title, subtitle, date, link }) => {
   return (
     <div className="sub-qualification-wrapper">
-      <a href={`${link}`}>
+      <a className="qualification-wrapper-anchor" href={`${link}`}>
         <div className="sub-qualification-container bg-ease">
           <div className="qualification-image">
             <Image filename={`${imageName}`} />
@@ -18,7 +18,9 @@ const QualificationItem = ({ imageName, category, title, subtitle, date, link })
 
           <div className="qualification-data">
             <h3 className="qualification-title color-ease">
-              {title} <Arrow />
+              <a href={`${link}`}>
+                {title} <Arrow />
+              </a>
             </h3>
             <span className="qualification-subtitle">{subtitle}</span>
             <span className="qualification-date">{date}</span>
