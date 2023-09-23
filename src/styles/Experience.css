@@ -34,6 +34,9 @@
   background: 0 0;
 }
 @media (min-width: 0px) {
+  .sub-experience-wrapper {
+    padding-bottom: 3.75rem;
+  }
   .experience-wrapper-anchor {
     pointer-events: none;
   }

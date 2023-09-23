@@ -6,7 +6,7 @@
   position: relative;
   min-height: auto;
   margin-bottom: 0;
-  transform: none !important;
+  transform: none;
   text-align: center;
   padding: 10px 0 50px;
 }
@@ -45,6 +45,7 @@
   .welcome-container h1 {
     font-size: 2.5rem;
     text-align: center;
+    margin-bottom: 1.5rem;
   }
   .welcome-container h1 br {
     display: none;
@@ -68,7 +69,6 @@
     justify-content: center;
     font-family: var(--font-roboto);
     position: relative;
-    margin-top: -60px;
     margin-bottom: 34vh;
   }
   .welcome-container .me {
@@ -76,7 +76,11 @@
   }
   .welcome-container h1 {
     font-size: 4.75rem;
+    text-align: left;
     margin-bottom: 2.5rem;
+  }
+  .welcome-container h1 br {
+    display: block;
   }
   .welcome-container p {
     font-size: 1.25rem;
