@@ -1,9 +1,9 @@
 :root {
-  --background: #F4F9FC;
-  --primary: #aadcec;
-  --primary-shadow: rgba(170, 220, 236, 0.15);
-  --text: #0f1b61;
-  --accent: #FF7B9C;
+  --background: #f1faee;
+  --primary: #457b9d;
+  --accent: #e63946;
+  --text: #1d3557;
+  --primary-shadow: rgba(168, 218, 200, 0.15);
   --gray-shade: #919795;
   --radius: 20px;
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -53,13 +53,18 @@ li {
 }
 a {
   text-decoration: none;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 .center {
   display: flex;
   align-items: center;
 }
 .dot {
-  color: var(--primary);
+  color: var(--accent);
 }
 .link {
   color: var(--accent);
