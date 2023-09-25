@@ -18,7 +18,7 @@ const addTargetRef = ({ ref, id }) => {
 }
 
 const onTargetScroll = e => {
-  const { scrollTop } = e.target
+  const { scrollTop } = e.target.scrollingElement
   const targetCoordsArr = Object.keys(targetRefTable)
     .map(id => ({ id, targetRef: targetRefTable[id].targetRef }))
     .filter(({ targetRef }) => !!targetRef)
@@ -30,7 +30,6 @@ const onTargetScroll = e => {
       }
     })
   const [nearestTarget] = findNearestElement(targetCoordsArr, scrollTop)
-  // console.log(targetCoordsArr)
   // console.log(nearestTarget)
   // console.log(scrollTop)
   if (nearestTarget && nearestTarget.id) {

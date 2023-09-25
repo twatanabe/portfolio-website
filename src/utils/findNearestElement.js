@@ -1,13 +1,13 @@
 const findNearestElement = (elements, scrollTop) => {
   const { abs: mathAbs } = Math
   const nearest = elements.reduce((f, next) => {
-    const distance = mathAbs(next.offsetTop - scrollTop - 200)
+    const distance = mathAbs(next.offsetTop - scrollTop)
 
     if (!f) {
       return { element: next, distance }
     }
 
-    if (distance < f.distance) {
+    if (distance <= f.distance) {
       return { element: next, distance }
     }
 

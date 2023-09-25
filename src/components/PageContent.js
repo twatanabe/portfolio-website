@@ -6,11 +6,13 @@ const PageContent = ({
   children,
   pageContentContainerClassName = 'page-content-container',
   pageContentClassName = 'page-content',
+  onScroll = () => { },
   ...props
 }) => {
+  window.addEventListener('scroll', onScroll);
   if (children.length) {
     return (
-      <div className={`${pageContentContainerClassName}`}>
+      <div onScroll={onScroll} className={`${pageContentContainerClassName}`}>
         <div className={`${pageContentClassName}`}>
           {children.map((child, index) =>
             React.cloneElement(child, { key: `pc_${index}`, ...props })

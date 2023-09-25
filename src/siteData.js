@@ -2,12 +2,10 @@
 const siteData = {
   headerLinks: [{ label: "Welcome", path: "/" }],
   sidebarLinks: [
-    { label: "Welcome", sectionName: "welcome" },
+    { label: "About", sectionName: "about" },
     { label: "Experience", sectionName: "experience" },
     { label: "Qualification", sectionName: "qualification" },
     { label: "Projects", sectionName: "projects" },
-    // { label: "And More", sectionName: "about" },
-    { label: "Get In Touch", sectionName: "contact" },
   ],
   sections: [
     {
@@ -72,8 +70,8 @@ const siteData = {
           link: "https://www.bio-rad.com/",
         },
         {
-          title: "Kowa American Corporation",
-          company: "Senior Software Engineer",
+          title: "Senior Software Engineer",
+          company: "Kowa American Corporation",
           industry: "Healthcare",
           description:
             "Head of the engineering division to develop products for Air Force and Hospital clients. Collaborate with the Japan headquarters team in R&D requirements.",

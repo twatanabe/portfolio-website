@@ -7,23 +7,21 @@ import 'styles/Project.css'
 const ProjectItem = ({ title, description, tools = [], year, link }) => {
   return (
     <div className="sub-project-wrapper">
-      <a className="project-wrapper-anchor" href={`${link}`}>
-        <div className="sub-project-container bg-ease">
-          <h3 className="project-name color-ease">
-            <a href={`${link}`}>
-              {title}
-              <Arrow />
-            </a>
-          </h3>
-          <p>{description}</p>
-          <div className="project-used">
-            {/* {items.map((item) => <Item {...item} />)} */}
-            {tools.map((tool) => (
-              <span className="project-used-tool">{tool}</span>
-            ))}
-          </div>
+      <div className="sub-project-container bg-ease">
+        <h3 className="project-name color-ease">
+          <a href={`${link}`}>
+            {title}
+            <Arrow />
+          </a>
+        </h3>
+        <p>{description}</p>
+        <div className="project-used">
+          {/* {items.map((item) => <Item {...item} />)} */}
+          {tools.map((tool, id) => (
+            <span key={id} className="project-used-tool">{tool}</span>
+          ))}
         </div>
-      </a>
+      </div>
     </div>
   );
 }
@@ -38,7 +36,6 @@ const Project = ({ section = [] }) => {
 }
 
 Project.propTypes = {
-  onClick: PropTypes.func.isRequired,
   section: PropTypes.object.isRequired
 }
 

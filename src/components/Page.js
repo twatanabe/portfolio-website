@@ -5,12 +5,11 @@ import 'styles/Page.css'
 const Page = ({ 
   children, 
   pageContainerClassName = 'page-container',
-  onScroll = () => { },
   ...props
  }) => {
   if (children.length) {
     return (
-      <div onScroll={onScroll} className={`${pageContainerClassName}`}>
+      <div className={`${pageContainerClassName}`}>
         {
           children.map((child, index) => React.cloneElement(child, { key: `pc_${index}`, ...props }))
         }

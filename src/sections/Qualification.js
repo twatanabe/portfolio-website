@@ -8,25 +8,23 @@ import 'styles/Qualification.css'
 const QualificationItem = ({ imageName, category, title, subtitle, date, link }) => {
   return (
     <div className="sub-qualification-wrapper">
-      <a className="qualification-wrapper-anchor" href={`${link}`}>
-        <div className="sub-qualification-container bg-ease">
-          <div className="qualification-image">
-            <Image filename={`${imageName}`} />
-            {/* {category == "Education" && <SchoolOutlinedIcon />}
+      <div className="sub-qualification-container bg-ease">
+        <div className="qualification-image">
+          <Image filename={`${imageName}`} />
+          {/* {category == "Education" && <SchoolOutlinedIcon />}
           {category == "Certification" && <WorkspacePremiumOutlinedIcon />} */}
-          </div>
-
-          <div className="qualification-data">
-            <h3 className="qualification-title color-ease">
-              <a href={`${link}`}>
-                {title} <Arrow />
-              </a>
-            </h3>
-            <span className="qualification-subtitle">{subtitle}</span>
-            <span className="qualification-date">{date}</span>
-          </div>
         </div>
-      </a>
+
+        <div className="qualification-data">
+          <h3 className="qualification-title color-ease">
+            <a href={`${link}`}>
+              {title} <Arrow />
+            </a>
+          </h3>
+          <span className="qualification-subtitle">{subtitle}</span>
+          <span className="qualification-date">{date}</span>
+        </div>
+      </div>
     </div>
   );
 }
@@ -54,7 +52,6 @@ const Qualification = ({ section = [] }) => {
 }
 
 Qualification.propTypes = {
-  onClick: PropTypes.func.isRequired,
   section: PropTypes.object.isRequired
 }
 

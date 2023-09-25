@@ -1,6 +1,6 @@
 .education-section,
 .certification-section {
-  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
 }
 .education-section h2,
 .certification-section h2 {
@@ -34,7 +34,7 @@
 }
 @media (min-width: 0px) {
   .sub-qualification-container {
-    padding: 20px 0;
+    padding: 10px 0;
   }
   .qualification-wrapper-anchor {
     pointer-events: none;
