@@ -2,6 +2,19 @@
   .header-container {
     display: none;
   }
+  .theme-mode {
+    pointer-events: auto;
+    border: 0;
+    background-color: var(--background);
+    color: var(--accent);
+  }
+  .theme-mode:hover,
+  .theme-mode:focus {
+    color: var(--accent);
+  }
+  .theme-mode:active {
+    transform: translateY(-5px);
+  }
 }
 @media (min-width: 768px) {
   .header-container {

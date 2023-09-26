@@ -2,10 +2,45 @@
   .header-container {
     display: none;
   }
+  
+  .theme-mode {
+    pointer-events: auto;
+    border: 0;
+    background-color: var(--background);
+    color: var(--accent);
+  }
+
+  // .theme-mode {
+  //   display: block;
+  //   cursor: pointer;
+  //   padding: 0.8em 1.4em;
+  //   font-weight: 500;
+  //   font-size: .9rem;
+  //   text-transform: lowercase;
+  //   transition: -webkit-transform .2s ease-in-out;
+  //   transition: transform .2s ease-in-out;
+  //   transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  //   padding: 0;
+  //   margin: 0;
+  //   outline: 0;
+  //   color: inherit;
+  //   font-family: inherit;
+  //   font-size: inherit;
+  //   box-shadow: none;
+  //   box-sizing: border-box;
+  // }
+
+  .theme-mode:hover,
+  .theme-mode:focus {
+    color: var(--accent);
+  }
+
+  .theme-mode:active {
+    transform: translateY(-5px);
+  }
 }
 
 @media (min-width: 768px) {
-
   .header-container {
     display: flex;
     justify-content: space-between;

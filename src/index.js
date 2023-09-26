@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom/client"
 import { createHashRouter, RouterProvider } from "react-router-dom"
 import Home from "./page/Home"
 import siteData from "siteData"
+import { ThemeProvider } from "utils/theme"
 import "./styles/root.css"
 
 const router = createHashRouter(
@@ -19,4 +20,8 @@ const router = createHashRouter(
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
-root.render(<RouterProvider router={router} />)
+root.render(
+  <ThemeProvider>
+    <RouterProvider router={router} />
+  </ThemeProvider>
+);

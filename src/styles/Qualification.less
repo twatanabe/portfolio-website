@@ -1,3 +1,9 @@
+.education-section {
+  img {
+    filter: var(--invert);
+  }
+}
+
 .education-section,
 .certification-section {
   padding-bottom: 3.75rem;
@@ -12,27 +18,6 @@
   grid-template-columns: 2fr 6fr;
   column-gap: 1.5rem;
 }
-
-// .qualification-graph {
-//   margin-left: 50%;
-// }
-
-// .qualification-rounder {
-//   display: inline-block;
-//   width: 13px;
-//   height: 13px;
-//   background-color: var(--primary);
-//   border-radius: 50%;
-//   margin-top: 4px;
-// }
-
-// .qualification-line {
-//   display: block;
-//   width: 1px;
-//   height: 100%;
-//   background-color: var(--primary);
-//   transform: translate(6px, -7px);
-// }
 
 .qualification-image {
   height: 110px;
@@ -58,6 +43,7 @@
 .qualification-date {
   display: block;
   font-size: var(--fz-sm);
+  color: var(--gray-shade);
 }
 
 @media (min-width: 0px) {

@@ -18,7 +18,10 @@
 }
 @media (min-width: 768px) {
   .home-outer-container {
-    padding: 0 3rem 5rem 3rem;
+    padding: 0 3rem 0 3rem;
+  }
+  .home-content {
+    margin: 0;
   }
   .home-wrapper {
     display: flex;

@@ -33,7 +33,7 @@
   .sidebar-item-container {
     overflow: hidden;
     display: flex;
-    width: 100%;
+    width: 40%;
     flex-grow: 1;
     flex-direction: column;
     padding-top: 0.5rem;
@@ -62,7 +62,7 @@
   .sidebar-item-content--active {
     text-align: left;
     display: flex;
-    color: rgba(0, 0, 0, 0.85);
+    color: var(--text);
     flex-direction: column;
     padding: 1rem 0;
     font-size: var(--fz-sm);
@@ -70,14 +70,14 @@
     font-weight: bold;
   }
   .sidebar-item-underline {
-    width: 30%;
+    width: 60%;
     margin-left: 0;
     margin-right: auto;
     background: var(--primary);
     padding-bottom: 2px;
   }
   .sidebar-item-underline--active {
-    width: 50%;
+    width: 100%;
     position: relative;
     margin-left: 0;
     margin-right: auto;

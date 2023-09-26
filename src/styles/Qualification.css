@@ -1,3 +1,6 @@
+.education-section img {
+  filter: var(--invert);
+}
 .education-section,
 .certification-section {
   padding-bottom: 3.75rem;
@@ -31,6 +34,7 @@
 .qualification-date {
   display: block;
   font-size: var(--fz-sm);
+  color: var(--gray-shade);
 }
 @media (min-width: 0px) {
   .sub-qualification-container {
