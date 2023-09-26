@@ -10,11 +10,11 @@ const Profile = ({containerClassName = 'profile-container'}) => {
       ref={(ref) => addTargetRef({ ref, id: "profile" })}
       className={`${containerClassName}`}
     >
-      <div className="profile-image">
+      {/* <div className="profile-image">
         <Image filename="flying-spaghetti-monster" />
-      </div>
+      </div> */}
       <h1 className="profile-header">Takumi Watanabe</h1>
-      <p>
+      <p className="description">
         I provide technical solutions for web, cloud, and automation.
       </p>
     </section>

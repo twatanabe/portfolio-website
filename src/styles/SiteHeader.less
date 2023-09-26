@@ -5,15 +5,6 @@
 }
 
 @media (min-width: 768px) {
-  .logo {
-    justify-content: space-between;
-    font-size: 1.5rem;
-    font-weight: bold;
-
-    a {
-      pointer-events: auto;
-    }
-  }
 
   .header-container {
     display: flex;
@@ -26,6 +17,7 @@
     left: 50%;
     transform: translate(-50%, 0);
     pointer-events: none;
+    z-index: 2;
   }
 
   .header-content {
@@ -34,8 +26,17 @@
     justify-content: space-between;
     width: 100%;
     padding: 2em;
+
+    .logo {
+      justify-content: space-between;
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      a {
+        pointer-events: auto;
+      }
+    }
   }
 }
 
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}

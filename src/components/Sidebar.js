@@ -30,8 +30,8 @@ const Sidebar = ({ sidebarLinks, activeSection, onActiveSectionChange }) => {
   }, []);
   return (
     <div ref={(ref) => addControllerRef({ ref, id: "sidebar" })} className="sidebar-container" >
+      <Profile />
       <div className="sidebar-content">
-        <Profile />
         {sidebarLinks.map((item, index) => (
           <SidebarItem
             onActiveSectionChange={(sectionName) => {
