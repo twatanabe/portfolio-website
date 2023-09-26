@@ -1,6 +1,28 @@
 @media (min-width: 0px) {
   .header-container {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+    position: fixed;
+    width: 100%;
+    pointer-events: none;
+    z-index: 2;
+    top: 0;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .header-content .logo {
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .header-content .logo a {
+    pointer-events: auto;
   }
   .theme-mode {
     pointer-events: auto;
@@ -18,31 +40,11 @@
 }
 @media (min-width: 768px) {
   .header-container {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-weight: bold;
-    font-size: 1.25em;
-    position: fixed;
-    width: 82%;
     left: 50%;
     transform: translate(-50%, 0);
-    pointer-events: none;
-    z-index: 2;
+    width: 82%;
   }
   .header-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2em;
-  }
-  .header-content .logo {
-    justify-content: space-between;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .header-content .logo a {
-    pointer-events: auto;
+    padding: 2rem;
   }
 }

@@ -9,6 +9,7 @@
 @media (min-width: 0px) {
   .profile-container {
     padding-top: 2rem;
+    padding-bottom: 4rem;
   }
   h1 {
     text-align: center;
