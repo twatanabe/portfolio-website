@@ -53,6 +53,11 @@
   .experience-title:hover .arrow {
     padding-left: 8px;
   }
+}
+@media (min-width: 768px) {
+  h2 {
+    display: none;
+  }
   .sub-experience-container {
     grid-template-columns: 2fr 6fr;
     column-gap: 1.5rem;
@@ -67,11 +72,6 @@
   }
   .sub-experience-container:hover .arrow {
     padding-left: 8px;
-  }
-}
-@media (min-width: 0px) and (min-width: 768px) {
-  h2 {
-    display: none;
   }
 }
 @media (min-width: 1200px) {

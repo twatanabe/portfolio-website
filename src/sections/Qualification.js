@@ -17,7 +17,7 @@ const QualificationItem = ({ imageName, category, title, subtitle, date, link })
 
         <div className="qualification-data">
           <h3 className="qualification-title color-ease">
-            <a href={`${link}`}>
+            <a href={`${link}`} target="_blank">
               {title} <Arrow />
             </a>
           </h3>

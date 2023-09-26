@@ -13,7 +13,7 @@ const ExperienceItem = ({title, company, industry, description, date, achievemen
         </div>
         <div>
           <h3 className="experience-title color-ease">
-            <a href={`${link}`}>
+            <a href={`${link}`} target="_blank">
               {title} • {company} <Arrow />
             </a>
           </h3>

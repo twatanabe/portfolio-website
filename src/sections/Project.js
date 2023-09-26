@@ -9,7 +9,7 @@ const ProjectItem = ({ title, description, tools = [], year, link }) => {
     <div className="sub-project-wrapper">
       <div className="sub-project-container bg-ease">
         <h3 className="project-name color-ease">
-          <a href={`${link}`}>
+          <a href={`${link}`} target="_blank">
             {title}
             <Arrow />
           </a>
@@ -18,7 +18,9 @@ const ProjectItem = ({ title, description, tools = [], year, link }) => {
         <div className="project-used">
           {/* {items.map((item) => <Item {...item} />)} */}
           {tools.map((tool, id) => (
-            <span key={id} className="project-used-tool">{tool}</span>
+            <span key={id} className="project-used-tool">
+              {tool}
+            </span>
           ))}
         </div>
       </div>
