@@ -22,7 +22,7 @@ const SiteHeader = () => {
           className="theme-mode"
           aria-label="toggle theme"
         >
-          {themeName === "light" ? <WbSunnyIcon /> : <Brightness2Icon />}
+          {themeName === "dark" ? <WbSunnyIcon /> : <Brightness2Icon />}
         </button>
       </div>
     </div>
